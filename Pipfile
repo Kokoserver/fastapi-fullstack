@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+fastapi = {extras = ["all"], version = "*"}
+uvicorn = "*"
+jinja2 = "*"
+python-decouple = "*"
+pymongo = "*"
+email-validator = "*"
+bcrypt = "*"
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+server = "python run.py"
